@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+header .descuento p {
+    background: #1cd1b0;
+    font-size: 1.2rem;
+    padding: 5px 30px;
+}
+header .logo {
+    align-items: center;
+    background: #00669f;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+header .logo a {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+}
+header nav {
+    background-color: #001d2d;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    text-align: end;
+}
+header nav a {
+    color: #ffffff;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+header nav a:hover {
+    font-weight: bold;
+}
+
+/* MAIN */
+/* BTNCIRCULO */
+main .btnCirculo {
+    align-items: center;
+    background-color: #00669f;
+    border-radius: 50%;
+    color: #f3f3f3;
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    height: 80px;
+    justify-content: center;
+    margin-top: 50%;
+    position: absolute;
+    right: 30px;
+    width: 80px;
+}
+main .btnCirculo:hover {
+    background-color: #001d2d;
+    font-size: 60px;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+}
+
+/* CARD */
+.card {
+    background-color: #f3f3f3;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+    text-align: center;
+    width: 450px;
+}
+.container .card i {
+    color: #cc2424;
+    font-size: 30px;
+    padding: 30px;
+    position: absolute;
+}
+.container .card .background {
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 250px;
+}
+.bgBatman {
+    background-image: url('../img/fondoBatman.svg');
+}
+.bgHarley {
+    background-image: url('../img/fondoHarley.svg');
+}
+.bgSuperman {
+    background-image: url('../img/fondoSuperman.svg');
+}
+.bgWwonderWoman {
+    background-image: url('../img/fondoWonderWoman.svg');
+}
+.container .card img {
+    border-radius: 50%;
+    margin-top: 150px;
+    width: 200px;
+}
+.container .card h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 120px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.container .card p {
+    padding: 10px;
+}
+
+/* BOTON */
+button {
+    background-color: #00669f;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 30px 0px;
+    padding: 10px 30px;
+}
+button:hover {
+    background-color: #001d2d;
+}
+
+/* FOOTER */
+footer {
+    background-color: #00669f;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    text-align: center;
+}
+footer img {
+    position: absolute;
+    right: 20px;
+    /* width: 100px; */
+    width: 80px;
+}
+
+/* MDIAQUERIES */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    .container .cardHarley {
+        display: none;
+    }
+    footer {
+        align-items: center;
+        flex-direction: column;
+    }
+    footer img {
+        display: flex;
+        margin: 10px 0px;
+        position: relative;
+    }
+}
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
