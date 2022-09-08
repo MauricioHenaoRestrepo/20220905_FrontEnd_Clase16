@@ -37,96 +37,106 @@
                 <h2>Añadí tu super!</h2>
                 <p>Agregá tu personaje favorito completando las opciones.</p>
                 <form action="#" method="post">
-                    <div>
-                        <label for="name" value>Nombre</label>
-                        <input type="text" name="Nombre" id="name" />
-                    </div>
-                    <div>
-                        <label for="especie" value>Especie</label>
-                        <select name="especie" id="especie">
-                            <option value="superHeroe">Super Héroe</option>
-                            <option value="superVillano">Super Villano</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="fecha" value>Fecha</label>
-                        <input type="date" name="Fecha" id="fecha" />
-                    </div>
-                    <div>
-                        <label for="archivo" value>Seleccionar archivo </label>
-                        <input input type="file" name="Archivo" id="archivo" />
-                    </div>
-                    <div>
-                        <label for="descripcion"></label>
-                        <textarea
-                            name="Descripcion"
-                            id="descripcion"
-                            cols="30"
-                            rows="10"
-                            placeholder="Descripción"
-                        ></textarea>
-                    </div>
-                    <div>
-                        <legend>Poderes</legend>
-                        <div>
-                            <input
-                                type="checkbox"
-                                name="poderes"
-                                value="volar"
-                                id="poderes"
-                            />
-                            <label for="poderes">Volar</label>
+                    <div class="cuestionario">
+                        <!-- bloque izquierda -->
+                        <div class="izquierda">
+                            <div class="bloque">
+                                <label for="name" value>* Nombre</label>
+                                <input type="text" name="Nombre" id="name" />
+                            </div>
+                            <div class="bloque">
+                                <label for="fecha" value>Fecha</label>
+                                <input type="date" name="Fecha" id="fecha" />
+                            </div>
+                            <textarea
+                                class="bloque"
+                                name="Descripcion"
+                                id="descripcion"
+                                cols="30"
+                                rows="10"
+                                placeholder="Descripción"
+                            ></textarea>
                         </div>
-                        <div>
-                            <input
-                                type="checkbox"
-                                name="poderes"
-                                value="inteligencia"
-                                id="poderes"
-                            />
-                            <label for="poderes">Super Inteligencia</label>
+                        <!-- fin bloque izquierda -->
+
+                        <!-- bloque derecha -->
+                        <div class="derecha">
+                            <div class="bloque">
+                                <label for="especie" value>* Especie</label>
+                                <select name="especie" id="especie">
+                                    <option value="especie">Especie</option>
+                                </select>
+                            </div>
+                            <div class="bloque">
+                                <label for="archivo" value>Agregue foto</label>
+                                <input type="file" name="Archivo" id="archivo" />
+                            </div>
+                            <h4>Poderes</h4>
+                            <div class="">
+                                <div class="inputCheckbox">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        value="volar"
+                                        id="volar"
+                                    />
+                                    <label for="volar">Volar</label>
+                                </div>
+
+                                <div class="inputCheckbox">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        value="inteligencia"
+                                        id="inteligencia"
+                                    />
+                                    <label for="inteligencia">Super Inteligencia</label>
+                                </div>
+                                <div class="inputCheckbox">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        value="laser"
+                                        id="laser"
+                                    />
+                                    <label for="laser">Vista de Rayo Laser</label>
+                                </div>
+                                <div class="inputCheckbox">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        value="billetera"
+                                        id="billetera"
+                                    />
+                                    <label for="billetera">Billetera Gorda</label>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="">
+                                <h4>Tipo de personaje</h4>
+                                <div class="inputCheckbox">
+                                    <input
+                                        type="radio"
+                                        name="tipo"
+                                        value="heroeHeroina"
+                                        id="heroeHeroina"
+                                    />
+                                    <label for="heroeHeroina">Héroe / Heroina</label>
+                                </div>
+                                <div class="inputCheckbox">
+                                    <input
+                                        type="radio"
+                                        name="tipo"
+                                        value="villanoVillana"
+                                        id="villanoVillana"
+                                    />
+                                    <label for="villanoVillana">Villano / Villana</label>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <input
-                                type="checkbox"
-                                name="poderes"
-                                value="laser"
-                                id="poderes"
-                            />
-                            <label for="poderes">Vista de Rayo Laser</label>
-                        </div>
-                        <div>
-                            <input
-                                type="checkbox"
-                                name="poderes"
-                                value="billetera"
-                                id="poderes"
-                            />
-                            <label for="poderes">Billetera Gorda</label>
-                        </div>
+                        <!-- fin bloque derecha -->
                     </div>
-                    <div>
-                        <legend>Tipo de personaje</legend>
-                        <div>
-                            <input
-                                type="radio"
-                                name="tipo"
-                                value="heroeHeroina"
-                                id="tipo"
-                            />
-                            <label for="poderes">Héroe / Heroina</label>
-                        </div>
-                        <div>
-                            <input
-                                type="radio"
-                                name="tipo"
-                                value="villanoVillana"
-                                id="tipo"
-                            />
-                            <label for="tipo">Villano / Villana</label>
-                        </div>
-                    </div>
-                    <button type="submit">Añadir</button>
+                    <button class="buttonForm" type="submit">Añadir</button>
                 </form>
             </div>
         </main>

@@ -1,7 +1,7 @@
+/* https://www.figma.com/file/9XZ12ORXQuvMNg3ydKQtFo/Formulario-ll */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 
 /* HEADER */
 header {
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
     z-index: 1;
 }
@@ -130,6 +130,64 @@ main .btnCirculo:hover {
 .container .card p {
     padding: 10px;
 }
+main {
+    display: flex;
+    justify-content: center;
+}
+/* formulario.html */
+/* CONTAINERFORM */
+main .containerForm {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #00669f;
+    margin: 3rem;
+    border-radius: 25px;
+    width: 80vw;
+}
+main .cuestionario .izquierda,
+main .cuestionario .derecha {
+    width: 25rem;
+}
+main .containerForm h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding-top: 10px;
+}
+main .containerForm p {
+    font-size: 1rem;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+main .containerForm form .cuestionario {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    justify-content: space-around;
+}
+main .containerForm form .cuestionario .bloque label,
+h4 {
+    display: block;
+    color: #ffffff;
+    text-align: left;
+}
+main .containerForm form .cuestionario .bloque input,
+select,
+textarea {
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 10px 0px;
+    border: none;
+    width: 100%;
+}
+main .containerForm form .cuestionario .inputCheckbox {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: left;
+    margin-right: 10px;
+    color: #ffffff;
+}
 
 /* BOTON */
 button {
@@ -142,8 +200,16 @@ button {
     margin: 30px 0px;
     padding: 10px 30px;
 }
-button:hover {
+.buttonForm {
+    background-color: #1cd1b0;
+    width: 200px;
+    color: #001d2d;
+    font-weight: bold;
+}
+button:hover,
+.buttonForm:hover {
     background-color: #001d2d;
+    color: #ffffff;
 }
 
 /* FOOTER */
@@ -179,7 +245,14 @@ footer img {
         margin: 10px 0px;
         position: relative;
     }
+    main .cuestionario {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+    }
 }
+
 @media (max-width: 375px) {
     header h1 {
         font-size: 1.8rem;
